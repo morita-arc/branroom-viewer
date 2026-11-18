@@ -1,4 +1,4 @@
-const CACHE = "br-rules-202611141619";
+const CACHE = "br-rules-202611180936";
 const ASSETS = ["./","index.html","manifest.webmanifest","marked.min.js","icon-192.png","icon-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
